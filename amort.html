@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Citizens Bank HELOC DTI Calculator</h1>
+    <form>
+        <fieldset>
+            <legend>Enter Values</legend>
+            <label for="base-income">Base Income Yearly</label>
+            <input type="number" name="base-income" id="base-income" step=".01">
+            <br>
+            <label for="additional-income">Additional Income Yearly</label>
+            <input type="number" name="additional-income" id="additional-income" step=".01">
+            <br>
+            <label for="mortgage">Mortgage Monthly</label>
+            <input type="number" name="mortgage" id="mortgage" step=".01">
+            <br>
+            <label for="additional-debt">Additional Monthly Debt</label>
+            <input type="number" name="additional-debt" id="additional-debt" step=".01">
+            <br>
+            <label for="interest-rate">Insterest Rate</label>
+            <input type="number" name="interest-rate" id="interest-rate" step=".0001">
+            <br>
+            <label for="loan-amount">Loan Amount</label>
+            <input type="number" name="loan-amount" id="loan-amount">
+            <br>
+            <button type="button" id="calculate">Calculate</button>
+        </fieldset>
+    </form>
+    <h2>DTI</h2>
+    <p id="dti">0</p>
+
+    <h2>New Monthly Loan Payment</h2>
+    <p id="payment">0</p>
+
+    <h4>New Monthly Total Debt</h4>
+    <p id="monthly-debt">0</p>
+
+    <h4>New Yearly Total Debt</h4>
+    <p id="yearly-debt">0</p>
+    
+    <h4>Total Loan Payments for Year</h4>
+    <p id="total-year-loan-payment">0</p>
+
+    <h4>Total Yearly Income</h4>
+    <p id="yearly-income">0</p>
+
+    <h4>Total Monthly Income</h4>
+    <p id="monthly-income">0</p>
+
+    <script src="amort.js"></script>
+</body>
+</html>
